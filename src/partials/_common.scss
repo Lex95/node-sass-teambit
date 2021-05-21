@@ -12,11 +12,11 @@
     width: 80%;
     margin: auto;
 }
-
+// da cambiare gli hr con border tipo
 nav {
-    &.wrapper {
-        margin-top: 10px;
-        margin-bottom: 10px;
+    background-color: $bg_color_primary;
+    div {
+        margin: 10px 0;
     }
     .btn-nav {
         @include default_btn;
@@ -33,13 +33,9 @@ nav {
         }
     }
 }
-hr {
-    width: 80%;
-    margin: auto;
-}
 #s1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background-color: $bg_color_primary;
+    padding: 30px 0;
     div {
         p {
             margin-bottom: 30px;
@@ -61,5 +57,43 @@ hr {
     }
     img {
         width: 50%;
+    }
+}
+#s2 {
+    padding-top: 30px;
+    background-color: $bg_color_secondary;
+    text-align: center;
+    h3 {
+        margin-bottom: 20px;
+    }
+    .container-flex {
+        justify-content: space-around;
+        img {
+            height: $small_img_height;
+        }
+    }
+    img {
+        height: $big_img_height;
+        margin: 30px 0 40px;
+    }
+}
+#s3 {
+    padding: 40px 0 30px;
+    background-color: $bg_color_secondary;
+    text-align: center;
+    .container-flex {
+        justify-content: space-around;
+        div {
+            font-size: small;
+            img {
+                display: block;
+                height: $small_img_height;
+                margin: 20px auto;
+            }
+        }
+    }
+    img {
+        height: $big_img_height;
+        margin: 30px 0 40px;
     }
 }
