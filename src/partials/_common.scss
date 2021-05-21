@@ -1,0 +1,65 @@
+* {
+    color: $text_color_primary;
+    @include reset;
+}
+.container-flex {
+    display: flex;
+}
+.filler {
+    flex-grow: 1;
+}
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    &.wrapper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .btn-nav {
+        @include default_btn;
+        padding: $button_padding;
+    }
+    .btn-signup {
+        @include default_btn;
+        border: 1px solid $button_color_primary;
+        border-radius: $button_border_radius;
+        color: $button_color_primary;
+        img {
+            height: $btn_logo_size;
+            width: $btn_logo_size;
+        }
+    }
+}
+hr {
+    width: 80%;
+    margin: auto;
+}
+#s1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    div {
+        p {
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: $button_color_primary;
+            color: $button_color_text;
+            padding: $button_padding/2;
+            border-radius: $button_border_radius;
+            font-weight: bold;
+            img {
+                height: $btn_logo_size;
+                width: $btn_logo_size;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    img {
+        width: 50%;
+    }
+}

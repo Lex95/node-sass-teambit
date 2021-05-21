@@ -1,1 +1,68 @@
+* {
+  color: #58402c;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.container-flex {
+  display: flex;
+}
+
+.filler {
+  flex-grow: 1;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+nav.wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+nav .btn-nav {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+nav .btn-signup {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #2e4790;
+  border-radius: 10px;
+  color: #2e4790;
+}
+nav .btn-signup img {
+  height: 15px;
+  width: 15px;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+#s1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#s1 div p {
+  margin-bottom: 30px;
+}
+#s1 div button {
+  background-color: #2e4790;
+  color: white;
+  font-weight: bold;
+}
+#s1 div button img {
+  height: 15px;
+  width: 15px;
+}
+#s1 div a {
+  text-decoration: none;
+}
+#s1 img {
+  width: 50%;
+}
