@@ -12,6 +12,12 @@
     width: 80%;
     margin: auto;
 }
+.col-6 {
+    width: 50%;
+}
+.col-3 {
+    width: 25%;
+}
 // da cambiare gli hr con border tipo
 nav {
     background-color: $bg_color_primary;
@@ -95,5 +101,25 @@ nav {
     img {
         height: $big_img_height;
         margin: 30px 0 40px;
+    }
+}
+#s4 {
+    padding-top: 30px;
+    .container-flex {
+        margin-bottom: 30px;
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: $button_color_primary;
+        margin-bottom: 10px;
     }
 }
