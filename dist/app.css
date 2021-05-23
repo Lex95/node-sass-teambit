@@ -42,6 +42,9 @@ nav .wrapper {
   padding: 10px 0;
   border-bottom: 1px solid #58402c;
 }
+nav img {
+  height: 40px;
+}
 nav .btn-nav {
   background-color: white;
   border: none;
@@ -70,14 +73,15 @@ nav .btn-signup img {
 
 #s1 {
   background-color: white;
-}
-#s1 div {
   padding: 30px 0;
 }
-#s1 div .button-container {
+#s1 h1 {
+  font-size: 40px;
+}
+#s1 .button-container {
   margin: 30px 0 15px;
 }
-#s1 div button {
+#s1 button {
   background-color: #2e4790;
   border: none;
   color: white;
@@ -85,11 +89,11 @@ nav .btn-signup img {
   border-radius: 5px;
   font-weight: bold;
 }
-#s1 div button:hover {
+#s1 button:hover {
   cursor: pointer;
   background-color: #283d7d;
 }
-#s1 div button img {
+#s1 button img {
   height: 15px;
   width: 15px;
 }

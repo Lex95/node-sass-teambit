@@ -2,7 +2,10 @@ nav {
     background-color: $bg_color_primary;
     .wrapper {
         padding: $default_margin/3 0;
-        border-bottom: 1px solid $text_color_primary
+        border-bottom: 1px solid $text_color_primary;
+    }
+    img {
+        height: 40px;
     }
     .btn-nav {
         @include default_btn;
@@ -22,17 +25,18 @@ nav {
 }
 #s1 {
     background-color: $bg_color_primary;
-    div {
-        padding: $default_margin 0;
-        .button-container {
-            margin: $default_margin 0 $default_margin/2;
-        }
-        button {
-            @include signup_btn;
-            img {
-                height: $btn_logo_size;
-                width: $btn_logo_size;
-            }
+    padding: $default_margin 0;
+    h1 {
+        font-size: 40px;
+    }
+    .button-container {
+        margin: $default_margin 0 $default_margin/2;
+    }
+    button {
+        @include signup_btn;
+        img {
+            height: $btn_logo_size;
+            width: $btn_logo_size;
         }
     }
     img {
@@ -54,7 +58,7 @@ nav {
     }
     img {
         height: $big_img_height;
-        margin: $default_margin 0 $default_margin*2;
+        margin: $default_margin 0 $default_margin * 2;
     }
 }
 #s3 {
@@ -74,7 +78,7 @@ nav {
     }
     img {
         height: $big_img_height;
-        margin: $default_margin 0 $default_margin*2;
+        margin: $default_margin 0 $default_margin * 2;
     }
 }
 #s4 {
@@ -172,7 +176,7 @@ footer {
         }
     }
     h3 {
-        margin-bottom: $default_margin*2/3;
+        margin-bottom: $default_margin * 2/3;
     }
     ul {
         list-style: none;
