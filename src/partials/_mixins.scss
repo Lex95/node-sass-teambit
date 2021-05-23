@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 @mixin default_btn {
-    background-color: transparent;
+    background-color: $bg_color_primary;
     border: none;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($bg_color_primary, 5%);
+    }
 }
 @mixin signup_btn {
     background-color: $button_color_primary;
@@ -14,4 +18,8 @@
     padding: $button_padding/2;
     border-radius: $button_border_radius;
     font-weight: bold;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($button_color_primary, 5%);
+    }
 }

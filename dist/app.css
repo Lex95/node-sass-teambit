@@ -21,6 +21,11 @@
 a {
   text-decoration: none;
 }
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.8;
+}
 
 .col-6 {
   width: 50%;
@@ -38,17 +43,25 @@ nav .wrapper {
   border-bottom: 1px solid #58402c;
 }
 nav .btn-nav {
-  background-color: transparent;
+  background-color: white;
   border: none;
   padding: 10px;
 }
+nav .btn-nav:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
 nav .btn-signup {
-  background-color: transparent;
+  background-color: white;
   border: none;
   border: 1px solid #2e4790;
   border-radius: 5px;
   color: #2e4790;
   padding: 5px;
+}
+nav .btn-signup:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
 }
 nav .btn-signup img {
   height: 15px;
@@ -62,7 +75,7 @@ nav .btn-signup img {
   padding: 30px 0;
 }
 #s1 div .button-container {
-  margin: 30px 0;
+  margin: 30px 0 15px;
 }
 #s1 div button {
   background-color: #2e4790;
@@ -71,6 +84,10 @@ nav .btn-signup img {
   padding: 5px;
   border-radius: 5px;
   font-weight: bold;
+}
+#s1 div button:hover {
+  cursor: pointer;
+  background-color: #283d7d;
 }
 #s1 div button img {
   height: 15px;
@@ -121,7 +138,8 @@ nav .btn-signup img {
 }
 
 #s4 {
-  padding-top: 30px;
+  background-color: white;
+  padding: 30px;
 }
 #s4 .container-flex {
   margin-bottom: 30px;
@@ -133,10 +151,9 @@ nav .btn-signup img {
   margin-bottom: 30px;
 }
 #s4 p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 #s4 a {
-  text-decoration: none;
   color: #2e4790;
   margin-bottom: 10px;
 }
@@ -150,7 +167,7 @@ nav .btn-signup img {
   width: 40%;
   border: 1px solid #2e4790;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   margin: 30px auto;
   background-color: white;
   text-align: left;
@@ -174,28 +191,39 @@ nav .btn-signup img {
 }
 #s5 .button-container {
   width: 40%;
-  margin: 0 auto 30px;
+  margin: 30px auto 15px;
 }
 #s5 .button-container button {
   background-color: #2e4790;
+  border: none;
   color: white;
   padding: 5px;
   border-radius: 5px;
   font-weight: bold;
 }
+#s5 .button-container button:hover {
+  cursor: pointer;
+  background-color: #283d7d;
+}
 #s5 .button-container button img {
   height: 15px;
   width: 15px;
-}
-#s5 a {
-  text-decoration: none;
 }
 
 footer {
   padding: 30px 0;
 }
+footer .container-flex {
+  justify-content: space-between;
+}
 footer .container-flex div {
-  margin-right: 20px;
+  flex-basis: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+footer .container-flex div:first-child {
+  flex-basis: 600px;
 }
 footer .container-flex div:last-child {
   margin-right: 0;
@@ -203,7 +231,7 @@ footer .container-flex div:last-child {
 footer img {
   height: 40px;
   width: 40px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 footer p {
   line-height: 30px;
