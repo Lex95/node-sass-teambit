@@ -7,3 +7,11 @@
     background-color: transparent;
     border: none;
 }
+@mixin signup_btn {
+    background-color: $button_color_primary;
+    border: none;
+    color: $button_color_text;
+    padding: $button_padding/2;
+    border-radius: $button_border_radius;
+    font-weight: bold;
+}

@@ -1,0 +1,184 @@
+nav {
+    background-color: $bg_color_primary;
+    .wrapper {
+        padding: $default_margin/3 0;
+        border-bottom: 1px solid $text_color_primary
+    }
+    .btn-nav {
+        @include default_btn;
+        padding: $button_padding;
+    }
+    .btn-signup {
+        @include default_btn;
+        border: 1px solid $button_color_primary;
+        border-radius: $button_border_radius;
+        color: $button_color_primary;
+        padding: $button_padding/2;
+        img {
+            height: $btn_logo_size;
+            width: $btn_logo_size;
+        }
+    }
+}
+#s1 {
+    background-color: $bg_color_primary;
+    div {
+        padding: $default_margin 0;
+        .button-container {
+            margin: $default_margin 0 $default_margin/2;
+        }
+        button {
+            @include signup_btn;
+            img {
+                height: $btn_logo_size;
+                width: $btn_logo_size;
+            }
+        }
+    }
+    img {
+        width: 50%;
+    }
+}
+#s2 {
+    padding-top: $default_margin;
+    background-color: $bg_color_secondary;
+    text-align: center;
+    .wrapper {
+        border-bottom: 1px solid $text_color_primary;
+    }
+    .container-flex {
+        justify-content: space-around;
+        img {
+            height: $small_img_height;
+        }
+    }
+    img {
+        height: $big_img_height;
+        margin: $default_margin 0 $default_margin*2;
+    }
+}
+#s3 {
+    padding: $default_margin 0;
+    background-color: $bg_color_secondary;
+    text-align: center;
+    .container-flex {
+        justify-content: space-around;
+        div {
+            font-size: small;
+            img {
+                display: block;
+                height: $small_img_height;
+                margin: $default_margin/2 auto;
+            }
+        }
+    }
+    img {
+        height: $big_img_height;
+        margin: $default_margin 0 $default_margin*2;
+    }
+}
+#s4 {
+    padding-top: 30px;
+    .container-flex {
+        margin-bottom: 30px;
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: $button_color_primary;
+        margin-bottom: 10px;
+    }
+}
+#s5 {
+    padding: 30px 0;
+    background-color: $bg_color_secondary;
+    text-align: center;
+    .bubble {
+        width: 40%;
+        border: 1px solid $button_color_primary;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 30px auto;
+        background-color: white;
+        text-align: left;
+        p {
+            font-size: small;
+            margin-bottom: 15px;
+        }
+        div {
+            * {
+                margin-right: 15px;
+            }
+            img {
+                width: 40px;
+            }
+            p {
+                display: inline-block;
+                margin-bottom: 0;
+                span {
+                    color: $button_color_primary;
+                }
+            }
+        }
+    }
+    .button-container {
+        width: 40%;
+        margin: 0 auto 30px;
+        button {
+            background-color: $button_color_primary;
+            color: $button_color_text;
+            padding: $button_padding/2;
+            border-radius: $button_border_radius;
+            font-weight: bold;
+            img {
+                height: $btn_logo_size;
+                width: $btn_logo_size;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+footer {
+    // da rivedere un po' di spaziature
+    padding: 30px 0;
+    .container-flex {
+        div {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    img {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+    }
+    p {
+        line-height: 30px;
+        font-weight: 600;
+        span {
+            color: $button_color_primary;
+            font-weight: 500;
+        }
+    }
+    h3 {
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        li {
+            line-height: 30px;
+        }
+    }
+}
